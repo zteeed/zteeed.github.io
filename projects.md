@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Projects
 ---
 
-Something about me.
+Something about my projects.
