@@ -10,6 +10,8 @@ I am a cybersecurity student at [Telecom SudParis](https://www.telecom-sudparis.
 
 I love cybersecurity, I am the president of the InfoSec club of my university ([HackademINT](https://hackademint.org)). 
 I really like finding web vulnerabilities, solving binary exploitation challenges, programming. I like to do system administration as well. 
+I am part of two Capture The Flags cybersecurity teams: [T35H](https://t35h.re) and
+[HackademINT](https://hackademint.org).
 
 If you want to know more about me, you might look at my [projects](/projects) and my [awards](/awards).
 <br><br>
