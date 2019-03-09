@@ -21,6 +21,9 @@ defaults:
     values:
       layout: "post"
 
+collections:
+  - awards
+
 future: true
 plugins:
   - jekyll-seo-tag
