@@ -5,7 +5,7 @@ title: About
 
 # About me
 
-![](https://avatars0.githubusercontent.com/u/34286541?s=230&v=2"){:style="float: left;margin-right: 15px;margin-bottom: 10px;"}
+![](https://avatars0.githubusercontent.com/u/34286541?s=155&v=1"){:style="float: left;margin-right: 15px;margin-bottom: 10px;"}
 I am a cybersecurity student at [Telecom SudParis](https://www.telecom-sudparis.eu), currently pursuing my master’s degree.
 
 I love cybersecurity, I am the president of the InfoSec club of my university ([HackademINT](https://hackademint.org)). 
