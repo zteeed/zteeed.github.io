@@ -10,4 +10,4 @@ image-team: article.png
 
 [Link](https://www.telecom-sudparis.eu/actualite/hackademint-gagne-le-cybersecurity-night-out/)
 
-![](/images/awards/2018_CybersecurityNightOut.png)
+![](/images/awards/2018-12-19-CybersecurityNightOut/article.png)
