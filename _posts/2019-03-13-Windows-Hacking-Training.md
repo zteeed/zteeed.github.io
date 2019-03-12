@@ -44,6 +44,8 @@ You can download [here](https://www.kali.org/downloads/) the iso file of
 `Kali Linux 64 Bit` or `Kali Linux 32 Bit`, depending on your CPU computer. 
 If you do not know, try first with `Kali Linux 32 Bit`
 
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/kali_download.png">
+
 ##  Step 1.2: Making a bootable usb key from iso
 
 > Skip this step if you are working on the virtual machines until Step 1.3
@@ -75,12 +77,8 @@ in your BIOS options. To show booting option, you need to spam `F12` on startup.
 
 <ul>
 
-<li>Download a linux ISO file (Kali 64 bits)
-<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/kali_download.png">
-</li>
-
 <li>Add the ISO to the configuration of the virtual machine
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/live_kali_vbox.png">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/live_kali_vbox.png">
 </li>
 
 </ul>
@@ -90,14 +88,14 @@ in your BIOS options. To show booting option, you need to spam `F12` on startup.
 <ul>
 
 <li>Start the virtual machine and select `Live (amd64)`
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/kali_boot_live.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/kali_boot_live.PNG">
 </li>
 
 </ul>
 
 # Step 2: Get an admin user from scratch
 
-> If you already get an admin account, go to Step 3.
+> If you already get an admin account, go to Step 3.2
 
 ## Step 2.1: If you DO NOT get a user on the Windows system 
 
@@ -108,7 +106,7 @@ in your BIOS options. To show booting option, you need to spam `F12` on startup.
 (Utility Manager application of Windows) by cmd.exe in order to get an 
 administrator shell without need to authenticate. In my case, `/dev/sda2` is the
 Windows partition.
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube2/utilman_to_cmd.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube2/utilman_to_cmd.PNG">
 </li>
 </ul>
 
@@ -119,10 +117,10 @@ Windows partition.
 user as an administrator using `chntpw` command. `windaube` is the unpriviledge
 user that already exist on my Windows, replace it by yours when using `chntpw -u
 &lt;user&gt; Windows/System32/config/SAM`.
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/kali_live_chntpw_start.PNG">
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/kali_live_chntpw_user.PNG">
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/kali_live_chntpw_promote.PNG">
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/kali_live_chntpw_promote_write.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/kali_live_chntpw_start.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/kali_live_chntpw_user.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/kali_live_chntpw_promote.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/kali_live_chntpw_promote_write.PNG">
 
 </li>
 </ul>
@@ -138,15 +136,17 @@ user that already exist on my Windows, replace it by yours when using `chntpw -u
 
 <li>Click on the Utility Manager application of Windows from the administrator
 login interface in order to trigger an administrator Windows shell, then create
-a new account. If you get an error on `net localgroup administrators hacker_user
+a new account. If you get an error on `net localgroup Administrateurs hacker_user
 /add`, your user if created but is not an administrator so go back to Step 2.1
-in order to promote your new user as an administrator.
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube2/utilman.png">
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube2/create_user.PNG">
+in order to promote your new user as an administrator. `Administrateurs` is the
+name for the localgroup for administrators on my french Windows install (in
+English it might be `administrators` or `Administrators`)
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube2/utilman.png">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube2/create_user.PNG">
 </li>
 
-<li>So we created a new user `hacker_user` with password=`password`, lets login
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube2/new_user.PNG">
+<li>So we created a new user `hacker_user` with password=`password`, let's login
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube2/new_user.PNG">
 </li>
 
 </ul>
@@ -160,17 +160,17 @@ will enable us to get the passwords hash of all users on the system. If you
 asked why do we need an administrator account to use this tool, its because you
 need the administrator privilege to disable Windows Defender that is blocking
 the downlaod of this tool.
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/windows_defender_disable.PNG">
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/mimikatz_download.PNG">
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/mimikatz_keep.PNG">
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/mimikatz_exec_admin.PNG">
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/mimikatz_dump1.PNG">
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube1/mimikatz_dump2.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/windows_defender_disable.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/mimikatz_download.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/mimikatz_keep.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/mimikatz_exec_admin.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/mimikatz_dump1.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube1/mimikatz_dump2.PNG">
 </li>
 
 <li>
 Same thing with the other virtual machine:
-<img class="img_posts" src="../images/posts/WindowsHacking/Windaube2/mimikatz_dump2.PNG">
+<img class="img_posts" src="/images/posts/WindowsHacking/Windaube2/mimikatz_dump2.PNG">
 </li>
 
 </ul>
