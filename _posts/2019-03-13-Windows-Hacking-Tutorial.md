@@ -1,5 +1,5 @@
 ---
-title: Windows Hacking Training
+title: Windows Hacking Tutorial
 published: true
 ---
 
