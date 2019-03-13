@@ -23,6 +23,7 @@ defaults:
 
 collections:
   - awards
+  - projects
 
 future: true
 plugins:
