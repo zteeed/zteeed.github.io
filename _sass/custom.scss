@@ -2,12 +2,12 @@ p {
   text-align: justify;
 }
 
-.award_title {
+.award_title, .project_title {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.award_subtitle {
+.award_subtitle, .project_subtitle {
   margin-top: 20px;
 }
 
@@ -19,4 +19,12 @@ p {
 
 ul>li>img, ul>li>div>img, ul>li>div>iframe {
   margin-left: -40px;
+}
+
+.project_logo {
+  float: left; 
+  // margin: 15px 10px 10px 10px;
+  margin: -10px 10px 0px 10px;
+  width: 50px;
+  height: 50px;
 }
