@@ -22,6 +22,7 @@ If you want to know more about me, you might look at my [projects](/projects) an
 | Mail | [aurelien@duboc.xyz](mailto:aurelien@duboc.xyz)|
 | Github | [https://github.com/zteeed](https://github.com/zteeed)|
 | RootMe | [https://www.root-me.org/zTeeed-115405](https://www.root-me.org/zTeeed-115405)|
+| HackTheBox | [https://www.hackthebox.eu/profile/190724](https://www.hackthebox.eu/profile/190724)|
 | LinkedIn | [https://www.linkedin.com/in/aurelien-duboc/](https://www.linkedin.com/in/aurelien-duboc/)|
 
 
