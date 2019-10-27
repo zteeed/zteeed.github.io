@@ -15,6 +15,7 @@ I am part of two Capture The Flags cybersecurity teams: [T35H](https://t35h.re) 
 
 If you want to know more about me, you might look at my [projects](/projects) and my [awards](/awards).
 <br><br>
+<script src="https://www.hackthebox.eu/badge/190724"></script>
 
 # Personnal informations
 
@@ -24,6 +25,7 @@ If you want to know more about me, you might look at my [projects](/projects) an
 | RootMe | [https://www.root-me.org/zTeeed-115405](https://www.root-me.org/zTeeed-115405)|
 | HackTheBox | [https://www.hackthebox.eu/profile/190724](https://www.hackthebox.eu/profile/190724)|
 | LinkedIn | [https://www.linkedin.com/in/aurelien-duboc/](https://www.linkedin.com/in/aurelien-duboc/)|
+
 
 
 ## PGP key
