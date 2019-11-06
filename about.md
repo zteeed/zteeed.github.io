@@ -15,7 +15,10 @@ I am part of two Capture The Flags cybersecurity teams: [T35H](https://t35h.re) 
 
 If you want to know more about me, you might look at my [projects](https://github/com/zteeed), my [curriculum vitae](/cv) and my [awards](/awards).
 <br><br>
-<script src="https://www.hackthebox.eu/badge/190724"></script>
+
+| HackTheBox Badge        | RootMe Badge          |
+|:-------------|:------------------|
+| <script src="https://www.hackthebox.eu/badge/190724"></script> | <script src="https://root-me-badge.hackademint.org/storage_clients/2957f005709cdb08dfe920cd556151ba/badge.js"></script> |
 
 # Personnal informations
 
