@@ -126,7 +126,7 @@ Result:
 ```
 
 It works and much faster than `fcrackzip`.<br>
-We can unzip the password:
+We can unzip the encrypted zip file using the password found:
 
 ```bash
 unzip -P "QPVz8ubP6BJ5TA1zJnxsw@#\$%^yhgfdabbaaaabab" mail.zip
