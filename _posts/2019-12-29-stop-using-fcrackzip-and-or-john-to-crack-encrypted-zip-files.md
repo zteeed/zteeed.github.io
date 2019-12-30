@@ -135,4 +135,4 @@ unzip -P "QPVz8ubP6BJ5TA1zJnxsw@#\$%^yhgfdabbaaaabab" mail.zip
 ## Conclusion
 
 
-I have no idea why `fcrackzip` or `john` did not work in that case, you just know that you cannot trust those tools anymore.
+I have no idea why `fcrackzip` or `john` did not work in that case, you just know that you cannot trust these tools anymore.
