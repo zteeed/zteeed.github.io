@@ -8,14 +8,15 @@ published: true
 
 # Some information about the ressource path inside executable
 
-After compiling your python code, you need to know where the files added and used by the executable are located.
-
-Here is the source code: <a href="/images/posts/PythonCompilation/source_code_ressource_path.py">source_code_ressource_path.py</a>
-
+After compiling your python code, you need to know where the files added and used by the executable are located. \\
 While developing, `_MEIPASS` attribute from `sys` does not exists, so `getattr(sys, '_MEIPASS', os.path.abspath('.'))` return `os.path.abspath('.')` \\
 You will be able to use it only after PyInstaller compilation.
 
+Here is the source code: <a href="/images/posts/PythonCompilation/source_code_ressource_path.py">source_code_ressource_path.py</a>
+
 <img src="/images/posts/PythonCompilation/demo1.png">
+
+After compiling...
 
 <img src="/images/posts/PythonCompilation/demo2.png">
 
@@ -46,8 +47,15 @@ After install `PyInstaller`, you need to find where `pyinstaller.exe` is located
 Example:
 ```
 pip install PyInstaller
-C:\Users\Aurelien\PycharmProjects\PythonCompilation\venv\Scripts\pyinstaller.exe -n RandomCar --onefile --no-console --clean -F --add-data images;images main.py
+C:\Users\Aurelien\PycharmProjects\PythonCompilation\venv\Scripts\pyinstaller.exe -n RandomCar --onefile --no-console --clean --add-data images;images main.py
 ```
+
+The options used are:
+- `--onefile`: Create a one-file bundled executable
+- `--no-console`: Do not provide a console window for standard i/o
+- `--clean`: Clean PyInstaller cache and remove temporary files before building.
+- `-n <name>`: Name to assign to the bundled app and spec file
+- `--add-data <SRC;DEST or SRC:DEST>`: Additional non-binary files or folders to be added to the executable. The path separator is platform specific, os.pathsep (which is ; on Windows and : on most unix systems) is used. This option can be used multiple times.
 
 The folder `images` is copyed inside the executable file `RandomCar.exe` \\
 You can find your executable file inside the folder `dist` created by PyInstaller
