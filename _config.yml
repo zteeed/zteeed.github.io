@@ -22,7 +22,10 @@ defaults:
       layout: "post"
 
 collections:
-  - awards
+  writeups: 
+    output: true
+  awards:
+    output: false
 
 future: true
 plugins:
