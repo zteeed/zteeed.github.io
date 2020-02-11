@@ -9,7 +9,7 @@ published: true
 # Some information about the ressource path inside executable
 
 After compiling your python code, you need to know where the files added and used by the executable are located. \\
-While developing, `_MEIPASS` attribute from `sys` does not exists, so `getattr(sys, '_MEIPASS', os.path.abspath('.'))` return `os.path.abspath('.')` \\
+While developing, `_MEIPASS` attribute from `sys` does not exists, so `getattr(sys, '_MEIPASS', os.path.abspath('.'))` returns `os.path.abspath('.')` \\
 You will be able to use it only after PyInstaller compilation.
 
 Here is the source code: <a href="/images/posts/PythonCompilation/source_code_ressource_path.py">source_code_ressource_path.py</a>
@@ -20,7 +20,7 @@ After compiling...
 
 <img src="/images/posts/PythonCompilation/demo2.png">
 
-Let's imagine you have copyed the folder `images` inside the executable, you can access to this folder inside the temp folder `AppData\Local\Temp\_MEI...`
+Let's imagine you have copied the folder `images` inside the executable, you can access this folder inside the temp folder `AppData\Local\Temp\_MEI...`
 
 <img src="/images/posts/PythonCompilation/cmd9.png">
 
@@ -42,7 +42,7 @@ Here is the source code: <a href="/images/posts/PythonCompilation/source_code.py
 
 ## Compilation
 
-After install `PyInstaller`, you need to find where `pyinstaller.exe` is located
+After installing `PyInstaller`, you need to find where `pyinstaller.exe` is located
 
 Example:
 ```
