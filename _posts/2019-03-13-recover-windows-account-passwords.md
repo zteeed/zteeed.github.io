@@ -18,9 +18,9 @@ published: true
 
 <ul>
 <li><a
-href="https://data.hackademint.org/86152947f7952b8eff05a20c4a63f9f76e7663141ea28b7798441e1bedc03685a41d762a5fbf1752f662c8817d4a31f5b59cf8d0c647490895ecf6c5210d7f0d/Windaube1.ova">Windaube1.ova </a>(sha1sum: 5c6d1267a7090a1a9ee2158fce8616d6014ce306)</li>
+href="https://windaube.hackademint.org/Windaube1.ova">Windaube1.ova </a>(sha1sum: 5c6d1267a7090a1a9ee2158fce8616d6014ce306)</li>
 <li><a
-href="https://data.hackademint.org/86152947f7952b8eff05a20c4a63f9f76e7663141ea28b7798441e1bedc03685a41d762a5fbf1752f662c8817d4a31f5b59cf8d0c647490895ecf6c5210d7f0d/Windaube2.ova">Windaube2.ova</a> (sha1sum: 1583b98694d849f72b8695b0934f49c3db6218fd)</li>
+href="https://windaube.hackademint.org/Windaube2.ova">Windaube2.ova</a> (sha1sum: 1583b98694d849f72b8695b0934f49c3db6218fd)</li>
 </ul>
 
 ### Alternative source
