@@ -3,7 +3,7 @@ title: Some tricks about python compilation
 published: true
 ---
 
-> This article might help you to learn some usefull tricks about python compilation.
+> This article might help you to learn some useful tricks about python compilation.
 > You can train using the code and files given in this article.
 
 # Some information about the ressource path inside executable
