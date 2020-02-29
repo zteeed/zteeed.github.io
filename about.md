@@ -13,7 +13,7 @@ I really like finding web vulnerabilities, solving binary exploitation challenge
 I am part of two Capture The Flags cybersecurity teams: [T35H](https://www.t35h.re) and
 [HackademINT](https://hackademint.org).
 
-If you want to know more about me, you might look at my [projects](https://github.com/zteeed), my [curriculum vitae](/cv) and my [awards](/awards).
+If you want to know more about me, you might look at my [projects](https://github.com/zteeed), my [resume](/resume) and my [awards](/awards).
 <br><br>
 
 | HackTheBox Badge        | RootMe Badge          |
