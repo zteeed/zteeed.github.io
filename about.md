@@ -18,7 +18,7 @@ If you want to know more about me, you might look at my [projects](https://githu
 
 | HackTheBox Badge        | RootMe Badge          |
 |:-------------|:------------------|
-| <script src="https://www.hackthebox.eu/badge/190724"></script> | <script src="https://root-me-badge.hackademint.org/storage_clients/5c75b02f7d81874f8fc17adc0b7bc9ab/badge.js"></script> |
+| <script src="https://www.hackthebox.eu/badge/190724"></script> | <script src="https://root-me-badge.cloud.duboc.xyz/storage_clients/5c75b02f7d81874f8fc17adc0b7bc9ab/badge.js"></script> |
 
 # Personnal informations
 
