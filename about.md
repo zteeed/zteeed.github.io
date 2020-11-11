@@ -6,12 +6,12 @@ title: About
 # About me
 
 ![](https://avatars0.githubusercontent.com/u/34286541?s=155&v=1"){:style="float: left;margin-right: 15px;margin-bottom: 10px;"}
-I am a cybersecurity student at [Telecom SudParis](https://www.telecom-sudparis.eu), currently pursuing my master’s degree.
+I am a cybersecurity student at [Telecom SudParis](https://www.telecom-sudparis.eu), currently working for the french cloud provider [3DS OUTSCALE](https://en.outscale.com/).
 
-I love cybersecurity, I am the president of the InfoSec club of my university ([HackademINT](https://hackademint.org)). 
+I love cybersecurity, I am the president of the InfoSec club of my university ([HackademINT](https://www.hackademint.org)). 
 I really like finding web vulnerabilities, solving binary exploitation challenges, programming. I like to do system administration as well. 
-I am part of two Capture The Flags cybersecurity teams: [T35H](https://www.t35h.re) and
-[HackademINT](https://hackademint.org).
+I am part of two Capture The Flags cybersecurity teams: [T35H](https://ctftime.org/team/45998) and
+[HackademINT](https://ctftime.org/team/30462).
 
 If you want to know more about me, you might look at my [projects](https://github.com/zteeed), my [resume](/resume) and my [awards](/awards).
 <br><br>
