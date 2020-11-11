@@ -24,7 +24,7 @@ Demo: [https://ashishchaudhary.in/hacker-blog](https://ashishchaudhary.in/hacker
 If you want to see the changes before pushing the blog to Github, do a local build.
 
 1. [`gem install jekyll`](https://jekyllrb.com/docs/installation/#install-with-rubygems)
-2. `gem install jekyll-seo-tag`
+2. `gem install jekyll-seo-tag jekyll-sitemap jekyll-paginate`
 3. (`cd` to the blog directory, then:) `jekyll serve --watch --port 8000`
 4. Go to `http://0.0.0.0:8000/` in your web browser.
 
