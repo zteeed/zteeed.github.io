@@ -10,7 +10,7 @@ published: true
 
 <p style="text-align: center">
 <iframe 
-  src="https://player.twitch.tv/?video=798297101&parent=www.duboc.xyz"
+  src="https://player.twitch.tv/?video=798298270&parent=www.duboc.xyz"
   frameborder="0"
   allowfullscreen="true"
   scrolling="no"
