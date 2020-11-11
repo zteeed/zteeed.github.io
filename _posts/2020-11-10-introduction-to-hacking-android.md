@@ -29,16 +29,15 @@ published: true
 
 Let's take the case of a known temporary mail service TempMail (<a href="https://temp-mail.org/">https://temp-mail.org/</a>). While the service has provided completely free access to its API for years, restrictions on its use have had to be put in place to avoid recurring abuse.
 
-
 ## Android application analysis
 
 Let's analyze network traffic:
 
-After installing the APK on an Android, one uses <a href="https://www.charlesproxy.com">Charles Web Debugging Proxy</a>, a cross-platform HTTP debugging proxy server application written in Java. It allows the user to view HTTP, HTTPS, HTTP/2 and TCP port enabled traffic accessible from, to or through the local computer. The telephone is controlled on the PC using scrcpy, to facilitate the visualization of the requests according to the actions on the telephone. (<a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a>)
+After installing the APK on an Android, let's use <a href="https://www.charlesproxy.com">Charles Web Debugging Proxy</a>, a cross-platform HTTP debugging proxy server application written in Java. It allows the user to view HTTP, HTTPS, HTTP/2 and TCP port enabled traffic accessible from, to or through the local computer. The mobile phone is controlled on the computer using <a href="https://github.com/Genymobile/scrcpy">scrcpy</a>, to facilitate the visualization of the requests according to the actions on the telephone.
 
 <img class="img_posts" src="/images/posts/AndroidHacking/android1.png">
 
-We notice that very little network flow leaves the application to the https://mob1.temp-mail.org server, and we notice that only two endpoints are used:
+We notice that a very little network flow leaves the application to the <a href="https://mob1.temp-mail.org">https://mob1.temp-mail.org</a> server, and we notice that only two endpoints are used:
 
 1) `/request/domains/format/json` allows you to retrieve the list of domains from which email addresses are generated:
 
@@ -54,21 +53,26 @@ $ curl https://mob1.temp-mail.org/request/mail/id/xrPGt8azxrPHosehxrHHosa8xrXGt8
 {"error":"There are no emails yet"}
 ```
 
-Since the change of addresses does not involve any network traffic, we understand that they are generated randomly on the client side and that the application is content to retrieve the content of emails. We are therefore faced with the following problem:
-How is the payload corresponding to <id> generated in the GET request made to the server?
-It should be noted that in most web services offering applications, application / API exchanges are sufficient to carry out abuses (LeCab, LeBonCoin, etc.)
-
+Since the change of addresses does not involve any network traffic, we understand that they are generated randomly on the client side and that the application retrieve the content of emails. We are therefore faced with the following problem:
+How is the payload corresponding to the `<id>` generated in the GET request made to the server ?
+It should be noted that in most web services offering applications, application/API exchanges are sufficient to carry out abuses (LeCab, LeBonCoin, etc.)
 
 ## Reverse of the application
 
-First, we analyzed the application from our phone using the APK Editor Pro application.
-Select the TempMail APK (com.tempmail) from the applications
-Select “Complete Edition” (RE-COMPILE)
-Files tab, DEX button → Smali
+First, we analyzed the application from our mobile phone using the APK Editor Pro application.
+<ul>
+<li>Select the TempMail APK (com.tempmail) from the applications</li>
+<li>Select “Complete Edition” (RE-COMPILE)</li>
+<li>Files tab, DEX button → Smali</li>
+</ul>
 
 <img class="img_posts" src="/images/posts/AndroidHacking/android2.png">
 
-A smali folder appears that we will explore, we can select the files in .smali and convert to java for more practicality
+<ul>
+<li>
+A smali folder appears that we will explore, we can select the files in .smali and convert to java for a better understanding
+</li>
+</ul>
 
 <img class="img_posts" src="/images/posts/AndroidHacking/android3.png">
 
@@ -111,7 +115,7 @@ public void g(String str) {
 }
 ```
 
-The e attribute of `j.b.a(this)` is well used, which corresponds to the function taking as argument what one can assume to be the strange id in base64. And it's `x.k(str)` that is passed as an argument.
+The `e` attribute of `j.b.a(this)` is well used, which corresponds to the function taking as argument what one can assume to be the strange id in base64. And it's `x.k(str)` that is passed as an argument.
 
 3) `com/tempmail/utils/x.java`
 
@@ -156,7 +160,6 @@ We understand that an operation is performed between the MD5 of the mail and `15
 
 
 4) `com/tempmail/utils/v.java`
-
 
 ```java
 /* compiled from: StringXORer */
@@ -254,6 +257,7 @@ print(json.dumps(json.loads(r.content)))
 
 ### What protections?
 
-SSL pinning is a mechanism that can be used to improve the security of a service or site that relies on SSL certificates. It allows you to specify a cryptographic identity that must be accepted by users. The certificate fingerprints are stored on the mobile application, for example, which prevents the use of SSL proxies to study the traffic sent between the phone and the API. This does not of course prevent them from being replaced in the application by those from the SSL proxy and then recompiled.
+SSL pinning is a mechanism that can be used to improve the security of a service or site that relies on SSL certificates. It allows you to specify a cryptographic identity that must be accepted by users. The certificate fingerprints are stored on the mobile application, for example, which prevents the use of SSL proxies to study the traffic sent between the mobile phone and the API. This does not of course prevent them from being replaced in the application by those from the SSL proxy and then recompiled.
 
 In addition, obfuscation work can make the reverse engineering task more difficult even if it does not prevent the reverse of the application itself. As we have seen here, obfuscation in Java is quite limited because the classes of the different libraries of the JVM or of the Android library cannot be renamed and appear clearly on decompilation.
+
