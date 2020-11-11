@@ -36,7 +36,7 @@ Let's analyze network traffic:
 
 After installing the APK on an Android, one uses <a href="https://www.charlesproxy.com">Charles Web Debugging Proxy</a>, a cross-platform HTTP debugging proxy server application written in Java. It allows the user to view HTTP, HTTPS, HTTP/2 and TCP port enabled traffic accessible from, to or through the local computer. The telephone is controlled on the PC using scrcpy, to facilitate the visualization of the requests according to the actions on the telephone. (<a href="https://github.com/Genymobile/scrcpy">https://github.com/Genymobile/scrcpy</a>)
 
-<img class="img_posts" src"/images/AndroidHacking/android1.png">
+<img class="img_posts" src="/images/AndroidHacking/android1.png">
 
 We notice that very little network flow leaves the application to the https://mob1.temp-mail.org server, and we notice that only two endpoints are used:
 
@@ -66,11 +66,11 @@ Select the TempMail APK (com.tempmail) from the applications
 Select “Complete Edition” (RE-COMPILE)
 Files tab, DEX button → Smali
 
-<img class="img_posts" src"/images/AndroidHacking/android2.png">
+<img class="img_posts" src="/images/AndroidHacking/android2.png">
 
 A smali folder appears that we will explore, we can select the files in .smali and convert to java for more practicality
 
-<img class="img_posts" src"/images/AndroidHacking/android3.png">
+<img class="img_posts" src="/images/AndroidHacking/android3.png">
 
 Secondly, we chose to work from our respective computers to be able to more easily copy the extracted java code and use it to verify that the payload built corresponds to what we were looking for.
 We extract the application on the computer using <a href="https://wiki.archlinux.org/index.php/Android_Debug_Bridge">ADB</a>:
