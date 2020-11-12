@@ -89,7 +89,7 @@ $ adb pull /mnt/sdcard/base.apk /tmp/base.apk
 /mnt/sdcard/base.apk: 1 file pulled, 0 skipped. 3.3 MB/s (4941426 bytes in 1.443s)
 ```
 
-We then used the <a href="https://github.com/skylot/jadx">JADX</A> APK decompiler to grab the java files. Most of the exploration has been done using “grep”. Here is the exploration tree:
+We then used the <a href="https://github.com/skylot/jadx">JADX</A> APK decompiler to grab the java files. Most of the exploration has been done using `grep`. Here is the exploration tree:
 
 Source: <a href="https://github.com/zteeed/tempmail-apks/raw/master/2020-11-04-tempmail.apk">https://github.com/zteeed/tempmail-apks/raw/master/2020-11-04-tempmail.apk</a>
 
@@ -115,7 +115,7 @@ public void g(String str) {
 }
 ```
 
-The `e` attribute of `j.b.a(this)` is well used, which corresponds to the function taking as argument what one can assume to be the strange id in base64. And it's `x.k(str)` that is passed as an argument.
+The `e` attribute of `l.b.a(this)` is well used, which corresponds to the function taking as argument what one can assume to be the strange id in base64. And it's `x.k(str)` that is passed as an argument.
 
 3) `com/tempmail/utils/x.java`
 
