@@ -3,3 +3,6 @@ _site
 videos
 keys
 .jekyll-cache
+
+# Pycharm
+.idea/
