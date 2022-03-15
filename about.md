@@ -6,13 +6,14 @@ title: About
 # About me
 
 ![](/images/pics/esaip.jpeg){:style="float: left;margin-right: 15px;margin-bottom: 10px; width: 150px"}
-I am a cybersecurity student at [Telecom SudParis](https://www.telecom-sudparis.eu), currently working for the french cloud provider [3DS OUTSCALE](https://en.outscale.com/).
+I am a DevOps/SRE Engineer currently working at [Quicksign](https://www.quicksign.com/en/).
 
-I love cybersecurity, I am the president of the InfoSec club of my university ([HackademINT](https://www.hackademint.org)). 
+I'm a cybersecurity enthusiast, I was the president of the InfoSec club of my [university](https://www.telecom-sudparis.eu/) ([HackademINT](https://www.hackademint.org)). 
 I really like finding web vulnerabilities, solving binary exploitation challenges, programming. I like to do system administration as well. 
 I am part of two Capture The Flags cybersecurity teams: [T35H](https://ctftime.org/team/45998) and
 [HackademINT](https://ctftime.org/team/30462).
 
+<br>
 If you want to know more about me, you might look at my [projects](https://github.com/zteeed), my [resume](/resume) and my [awards](/awards).
 <br><br>
 
