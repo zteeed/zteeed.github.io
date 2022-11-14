@@ -1,5 +1,5 @@
 ---
-title: Stop using fcrackzip and/or john to crack encrypted zip files
+title: EN - Stop using fcrackzip and/or john to crack encrypted zip files
 published: true
 ---
 

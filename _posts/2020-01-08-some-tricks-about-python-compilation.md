@@ -1,5 +1,5 @@
 ---
-title: Some tricks about python compilation
+title: EN - Some tricks about python compilation
 published: true
 ---
 
