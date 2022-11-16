@@ -8,6 +8,5 @@ title: Resume
   
   <object
     data="/resume/2022_06_01_cv_duboc_aurelien.pdf"
-    type="application/pdf" style="margin-top: 15px;width:100%;height:700px" aria-label="resume"
-  >
+    type="application/pdf" style="margin-top: 15px;width:100%;height:700px" aria-label="resume"></object>
 </section>
