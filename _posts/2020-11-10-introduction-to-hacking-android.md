@@ -1,6 +1,5 @@
 ---
 title: EN - Introduction to Hacking Android 
-published: true
 ---
 
 > This article might help you to reverse Android application and access new features upon it. 

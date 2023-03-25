@@ -1,6 +1,5 @@
 ---
-title: EN - Stop using fcrackzip and/or john to crack encrypted zip files
-published: true
+title: EN - Zip cracking with cracker-ng (w/o fcrackzip/john)
 ---
 
 > This article might help you to retrieve plaintext passwords from zip

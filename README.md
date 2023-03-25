@@ -1,7 +1,8 @@
 # The Hacker-Blog theme
 
 ```bash
-bundle exec jekyll serve
+#  bundle exec jekyll serve
+docker run -p 4000:4000 -v $(pwd):/site bretfisher/jekyll-serve
 ```
 
 *Hacker-Blog is a minimalistic, responsive jekyll theme built for hackers. It is based on the [hacker theme](https://github.com/pages-themes/hacker) for project pages.*

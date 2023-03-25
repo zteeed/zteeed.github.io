@@ -1,6 +1,5 @@
 ---
 title: EN - Recover Windows account passwords
-published: true
 ---
 
 > This article might help you to retrieve plaintext passwords from Windows
@@ -155,7 +154,7 @@ English it might be `administrators` or `Administrators`)
 
 <ul>
 
-<li>Mimikatz is a power tool made by a french genius called `gentilkiwi` that
+<li>Mimikatz is a power tool made by `gentilkiwi` that
 will enable us to get the passwords hash of all users on the system. If you
 asked why do we need an administrator account to use this tool, its because you
 need the administrator privilege to disable Windows Defender that is blocking

@@ -1,6 +1,5 @@
 ---
 title: EN - Some tricks about python compilation
-published: true
 ---
 
 > This article might help you to learn some useful tricks about python compilation.
