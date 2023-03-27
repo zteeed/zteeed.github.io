@@ -6,7 +6,7 @@ title: About
 # About me
 
 ![](/images/pics/esaip.jpeg){:style="float: left;margin-right: 15px;margin-bottom: 10px; width: 150px"}
-I'm currently working as a freelance DevOps Engineer, I mainly focus on building new infrastructures.
+I'm currently working as a freelance DevOps Engineer, I mainly focus on building new infrastructures and automate stuff.
 I'm a cybersecurity enthusiast, I was the president of the InfoSec club of my [university](https://www.telecom-sudparis.eu/) ([HackademINT](https://www.hackademint.org)). 
 I really like finding web vulnerabilities, solving binary exploitation challenges, programming. I like to do system administration as well, I manage my own servers, its infrastructure, monitoring, etc. 
 I am part of two Capture The Flags cybersecurity teams: [T35H](https://ctftime.org/team/45998) and
