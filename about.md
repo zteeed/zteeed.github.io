@@ -28,6 +28,7 @@ If you want to know more about me, you might look at my [projects](https://githu
 |:-------------------|:---|
 | Mail 📫 | [aurelien@duboc.xyz](mailto:aurelien@duboc.xyz)|
 | LinkedIn 🌐 | [https://www.linkedin.com/in/aurelien-duboc/](https://www.linkedin.com/in/aurelien-duboc/)|
+| Services 🚩 | [https://status.duboc.xyz/status/public](https://status.duboc.xyz/status/public)|
 | Github 🌐 | [https://github.com/zteeed](https://github.com/zteeed)|
 | RootMe ☠ | [https://www.root-me.org/zTeeed-115405](https://www.root-me.org/zTeeed-115405)|
 | HackTheBox ☠ | [https://www.hackthebox.eu/profile/190724](https://www.hackthebox.eu/profile/190724)|
