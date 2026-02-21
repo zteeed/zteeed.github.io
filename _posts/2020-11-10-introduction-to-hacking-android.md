@@ -1,5 +1,5 @@
 ---
-title: EN - Introduction to Hacking Android 
+title: EN - Introduction to Hacking Android
 ---
 
 > This article might help you to reverse Android application and access new features upon it. 
@@ -18,7 +18,7 @@ title: EN - Introduction to Hacking Android
   allowfullscreen>
 </iframe>
 
-<em>H25 is a startup founded by <a href="https://twitter.com/clement_hammel">@clement_hammel</a> & <a href="https://twitter.com/MathisHammel">@MathisHammel</a> - code contests, CTF, and lots of streams. Join them on <a href="http://discord.h25.io">http://discord.h25.io</a> and <a href="http://twitch.h25.io">http://twitch.h25.io</a></em>
+<em>H25 is a startup founded by <a href="https://twitter.com/clement_hammel">@clement_hammel</a> & <a href="https://twitter.com/MathisHammel">@MathisHammel</a>: code contests, CTF, and lots of streams. Join them on <a href="http://discord.h25.io">http://discord.h25.io</a> and <a href="http://twitch.h25.io">http://twitch.h25.io</a></em>
 
 
 # Explanations

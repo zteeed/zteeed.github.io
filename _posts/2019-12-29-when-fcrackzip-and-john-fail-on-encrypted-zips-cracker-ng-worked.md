@@ -1,5 +1,5 @@
 ---
-title: EN - Zip cracking with cracker-ng (w/o fcrackzip/john)
+title: EN - When fcrackzip and John fail on encrypted ZIPs, cracker-ng worked
 ---
 
 > This article might help you to retrieve plaintext passwords from zip
@@ -9,7 +9,7 @@ title: EN - Zip cracking with cracker-ng (w/o fcrackzip/john)
 # Some information about the context
 
 Some weeks ago, I took part in a cybersecurity competition (<a href="https://tracs.viarezo.fr/gallery">Tracs</a>).<br>
-My team T35H lost the first place because of a failing implementation of `fcrackzip` and `zip2john`/`john` 
+My team T35H lost the first place because of a failing implementation of `fcrackzip` and `zip2john`/`john`
 
 ## The challenge
 
@@ -131,7 +131,24 @@ We can unzip the encrypted zip file using the password found:
 unzip -P "QPVz8ubP6BJ5TA1zJnxsw@#\$%^yhgfdabbaaaabab" mail.zip
 ```
 
+## Why did fcrackzip and John fail? (research)
+
+After the fact, checking known issues and upstream bug reports gives plausible explanations:
+
+### John the Ripper / zip2john
+
+John's PKZIP format uses a **2-byte checksum** for "early rejection": it skips full decryption when the first decrypted bytes don't match the expected checksum. For some ZIPs, that check is **wrong** and rejects the correct password (false negative).
+
+- **Bug:** [openwall/john#4300](https://github.com/openwall/john/issues/4300): archives created with certain tools (e.g. eZip on macOS, or tools using libarchive) can have an extended file header (e.g. `efh 0x6c78`) that makes zip2john output a **2-byte** checksum type. The format then bails out too early and never validates the password with the full CRC.
+- **Fix (upstream):** zip2john was updated to detect these cases and use a 1-byte checksum instead, so newer John versions may crack the same file. So in our case, the ZIP may have been created with a tool that triggered this bug; John thought the password was wrong and stopped before doing full verification.
+
+### fcrackzip
+
+- **Dictionary mode:** fcrackzip reads the wordlist as text, one password per line. Our wordlist was generated in Python with `open(..., 'wb')` and `b'\n'.join(flags)`, so it contains **raw bytes** (including `@#$%^` and other special characters). If fcrackzip or the system treats the file as text, encoding or line-ending issues could cause some passwords to be read incorrectly or skipped.
+- **False positives:** The man page mentions a **~0.4% false positive rate** with newer ZIP formats; the inverse (false negatives or missed passwords) is less documented but encoding/wordlist handling is a likely cause when the password contains special characters and the list is binary.
+
+So: **John** likely failed because of the 2-byte checksum false-negative bug for this ZIP's format; **fcrackzip** may have failed due to wordlist encoding/special-character handling. **cracker-ng** worked because it either doesn't use that checksum shortcut or handles the wordlist/format differently.
+
 ## Conclusion
 
-
-I have no idea why `fcrackzip` or `john` did not work in that case, you just know that you cannot trust these tools anymore.
+You cannot rely on fcrackzip or John for every encrypted ZIP: both have known edge cases (John's 2-byte checksum false negatives, fcrackzip's wordlist/encoding and false positive rate). For dictionary attacks on ZIPs with special-character passwords or "weird" ZIP variants, try **cracker-ng** or a newer John build that includes the zip2john fixes.

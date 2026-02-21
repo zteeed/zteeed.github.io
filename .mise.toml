@@ -1,0 +1,21 @@
+# Pinned tools - run `mise install` to install
+[tools]
+ruby = "4.0.1"
+
+# Tasks - run with `mise run <task>`
+[tasks.install]
+description = "Install gem dependencies (bundle install)"
+run = "bundle install"
+
+[tasks.update]
+description = "Update all gems to latest versions allowed by Gemfile"
+run = "bundle update"
+
+[tasks.serve]
+description = "Run Jekyll dev server (bundle exec jekyll serve)"
+run = "bundle exec jekyll serve"
+
+[tasks.build]
+description = "Build Jekyll site (bundle exec jekyll build)"
+depends = ["install"]
+run = "bundle exec jekyll build"
