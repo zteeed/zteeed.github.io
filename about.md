@@ -45,11 +45,10 @@ Outside work: Linux daily driver 💻 🐧, table tennis 🏓, and my own homela
   .htb-replica .htb-footer { width: 100%; min-height: 70px; background-color: #111927; text-align: center; box-sizing: border-box; padding-top: 20px; padding-bottom: 20px; }
   .htb-replica .htb-footer .htb-bottom-text { color: #A4B1CD; font-size: 0.9rem; margin: 0; }
   .htb-replica .htb-footer .htb-logo-img { height: 26px; width: auto; vertical-align: middle; margin-bottom: 1px; }
-  .rootme-badge-wrap { display: inline-block; transform: scale(1.35); transform-origin: left top; }
-  .badges-col { min-width: 0; }
-  .badges-col-htb { min-width: 0; }
+  .rootme-badge-wrap { display: inline-block; transform: scale(1.35); transform-origin: center top; }
+  .badges-col, .badges-col-htb { min-width: 0; display: flex; flex-direction: column; align-items: center; }
   .rootme-last-update { font-size: 0.8rem; color: #6b7280; margin-top: 0.75rem; padding-top: 0.25rem; }
-  .badges-wrapper { display: grid; grid-template-columns: minmax(50%, auto) 1fr; gap: 2rem; align-items: center; justify-content: center; max-width: 100%; }
+  .badges-wrapper { display: grid; grid-template-columns: minmax(30%, auto) 1fr; gap: 2rem; align-items: center; justify-content: start; max-width: 100%; }
   .personal-info-spacer { margin-bottom: 2rem; }
   .personal-info-heading { margin-top: 20px; margin-bottom: 20px; }
   .personal-info-table a { word-break: break-all; overflow-wrap: break-word; }
