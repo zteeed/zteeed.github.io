@@ -52,6 +52,7 @@ Outside work: Linux daily driver 💻 🐧, table tennis 🏓, and my own homela
   .badges-wrapper { display: grid; grid-template-columns: minmax(50%, auto) 1fr; gap: 2rem; align-items: center; justify-content: start; max-width: 100%; }
   .personal-info-spacer { margin-bottom: 2rem; }
   .personal-info-heading { margin-top: 20px; margin-bottom: 20px; }
+  .personal-info-table a { word-break: break-all; overflow-wrap: break-word; }
   @media (max-width: 770px) { .badges-wrapper { grid-template-columns: 1fr; } .badges-col-htb { min-width: 0; } }
 </style>
 <div class="badges-wrapper">
@@ -105,5 +106,6 @@ Outside work: Linux daily driver 💻 🐧, table tennis 🏓, and my own homela
 | Github 🌐 | [https://github.com/zteeed](https://github.com/zteeed)|
 | RootMe ☠ | [https://www.root-me.org/zTeeed-115405](https://www.root-me.org/zTeeed-115405)|
 | HackTheBox ☠ | [https://labs.hackthebox.com/achievement/badge/190724/215](https://labs.hackthebox.com/achievement/badge/190724/215)|
+{: .personal-info-table }
 
 <div class="personal-info-spacer"></div>
