@@ -23,7 +23,7 @@ Outside work: Linux daily driver 💻 🐧, table tennis 🏓, and my own homela
 **Next steps:** [Resume](/resume) · [Projects (GitHub)](https://github.com/zteeed) · [Awards](/awards) · [Articles](/articles)
 <br><br>
 
-<link rel="stylesheet" href="https://labs.hackthebox.com/fontawesome-6/css/all.css" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ '/css/fontawesome-6-all.css' | prepend: site.baseurl | replace: '//', '/' }}">
 <style>
   /* HTB badge replica - from labs.hackthebox.com/achievement/badge/190724/215 */
   .htb-replica { width: 320px; background: #1B2027; border-radius: 12px; overflow: hidden; box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
