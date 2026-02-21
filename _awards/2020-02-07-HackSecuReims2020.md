@@ -7,6 +7,8 @@ images-path: /images/awards/2020-02-07-HackSecuReims2020/
 image-scoreboard: scoreboard2020.png
 image-group: teams.jpg
 image-team: t35h.jpg
+related-writeup-url: /2020-02-08-hsr-2020
+related-writeup-title: "FR - Writeup - HackSecuReims 2020"
 
 ---
 HackSecuReims2020 is a french cybersecurity competition that brings together

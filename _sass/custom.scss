@@ -7,6 +7,11 @@ p {
   cursor: pointer;
 }
 
+.award-content a {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
 .award_subtitle, .project_subtitle {
   margin-top: 20px;
 }

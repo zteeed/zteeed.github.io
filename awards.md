@@ -11,9 +11,13 @@ title: Awards
       {{ award.rank }} at {{ award.name }} ({{ award.date-string }})
     </h2>
 
-    <div id="{{ award.name }}" style='display: none'>
+    <div id="{{ award.name }}" class="award-content" style='display: none'>
 
     {{ award.content | markdownify }}
+
+    {% if award.related-writeup-url %}
+      <p><strong>Related write-up:</strong> <a href="{{ award.related-writeup-url }}">{{ award.related-writeup-title | default: 'Write-up' }}</a></p>
+    {% endif %}
 
     {% if award.image-team %}
       <h3 class="award_subtitle"></h3>

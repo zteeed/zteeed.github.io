@@ -1,10 +1,9 @@
 <footer>
   <a href="">
     <span>
-        <b>{{ site.owner}}</b>
+        <b>{{ site.owner }}</b>
     </span>
-    {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
-    <span>© {{ currentyear }}</span>
+    <span>© {{ site.time | date: "%Y" }}</span>
   </a>
 </footer>
 <script src="/js/custom.js"></script>

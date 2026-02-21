@@ -2,14 +2,21 @@
    original: https://github.com/pages-themes/hacker 
 */
 
-@import "rouge-base16-dark";
-@import "default_colors";
+@use "default_colors" as *;
+@use "rouge-base16-dark" as *;
 
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
 $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
@@ -24,9 +31,11 @@ body {
 /* General & 'Reset' Stuff */
 
 .container {
-  width: 90%;
-  max-width: 1000px;
+  width: 80%;
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 
@@ -269,5 +278,6 @@ a:active, a:focus {
 }
 
 #wrapper {
+  width: 100%;
   min-height: calc(100vh - 100px);
 }

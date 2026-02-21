@@ -4,7 +4,7 @@ title: EN - Recover Windows account passwords
 
 > This article might help you to retrieve plaintext passwords from Windows
 > sessions. I disclaim any liability if you use this article for illegal actions.
-> If you want to train, you can downloads some virtual machines below, this
+> If you want to train, you can download some virtual machines below, this
 > tutorial is also made for you if you are working on a real Windows Operating
 > System.
 
@@ -33,7 +33,7 @@ href="https://windaube.minet.net/Windaube2.ova">Windaube2.ova</a> (sha1sum: 1583
 
 ### Upload the virtual machines
 
-Uplaod the `ova`'s files into [VirtualBox](https://www.virtualbox.org/).
+Upload the `ova` files into [VirtualBox](https://www.virtualbox.org/).
 
 # Step 1: Boot on a Linux Live OS
 

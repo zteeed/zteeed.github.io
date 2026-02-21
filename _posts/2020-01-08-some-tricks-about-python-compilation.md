@@ -5,7 +5,7 @@ title: EN - Some tricks about python compilation
 > This article might help you to learn some useful tricks about python compilation.
 > You can train using the code and files given in this article.
 
-# Some information about the ressource path inside executable
+# Some information about the resource path inside executable
 
 After compiling your python code, you need to know where the files added and used by the executable are located. \\
 While developing, `_MEIPASS` attribute from `sys` does not exists, so `getattr(sys, '_MEIPASS', os.path.abspath('.'))` returns `os.path.abspath('.')` \\
