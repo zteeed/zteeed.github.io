@@ -50,7 +50,7 @@ Outside work: Linux daily driver 💻 🐧, table tennis 🏓, and my own homela
   .rootme-last-update { font-size: 0.8rem; color: #6b7280; margin-top: 0.75rem; padding-top: 0.25rem; }
   .badges-wrapper { display: grid; grid-template-columns: minmax(30%, auto) 1fr; gap: 2rem; align-items: center; justify-content: start; max-width: 100%; }
   .personal-info-spacer { margin-bottom: 2rem; }
-  .personal-info-heading { margin-top: 20px; margin-bottom: 20px; }
+  .personal-info-heading { margin-top: 30px; margin-bottom: 20px; }
   .personal-info-table a { word-break: break-all; overflow-wrap: break-word; }
   @media (max-width: 770px) { .badges-wrapper { grid-template-columns: 1fr; } .badges-col-htb { min-width: 0; } }
 </style>
