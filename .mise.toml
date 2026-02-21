@@ -1,6 +1,8 @@
 # Pinned tools - run `mise install` to install
+# Ruby 3.3.4 = same as GitHub Pages (Jekyll 3.10, Sass 3.7)
+# https://pages.github.com/versions/
 [tools]
-ruby = "4.0.1"
+ruby = "3.3.4"
 
 # Tasks - run with `mise run <task>`
 [tasks.install]
