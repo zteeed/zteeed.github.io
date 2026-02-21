@@ -49,7 +49,7 @@ Outside work: Linux daily driver 💻 🐧, table tennis 🏓, and my own homela
   .badges-col { min-width: 0; }
   .badges-col-htb { min-width: 0; }
   .rootme-last-update { font-size: 0.8rem; color: #6b7280; margin-top: 0.75rem; padding-top: 0.25rem; }
-  .badges-wrapper { display: grid; grid-template-columns: minmax(50%, auto) 1fr; gap: 2rem; align-items: center; justify-content: start; max-width: 100%; }
+  .badges-wrapper { display: grid; grid-template-columns: minmax(50%, auto) 1fr; gap: 2rem; align-items: center; justify-content: center; max-width: 100%; }
   .personal-info-spacer { margin-bottom: 2rem; }
   .personal-info-heading { margin-top: 20px; margin-bottom: 20px; }
   .personal-info-table a { word-break: break-all; overflow-wrap: break-word; }
